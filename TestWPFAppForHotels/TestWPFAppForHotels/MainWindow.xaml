@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <DataGrid ItemsSource="{Binding CurrentHotels}" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Header="Name" Width="auto"></DataGridTextColumn>
+                <DataGridTextColumn Header="CountOfStars" Width="auto"></DataGridTextColumn>
+            </DataGrid.Columns>
+            
+        </DataGrid>
     </Grid>
 </Window>
